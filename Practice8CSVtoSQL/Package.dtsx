@@ -1,0 +1,1228 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/3/2024 5:23:57 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-E2ES5FT2"
+  DTS:CreatorName="LAPTOP-E2ES5FT2\famil"
+  DTS:DTSID="{7090F3C1-740F-4CBF-93F3-3F6E92DF03C1}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="7178"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{895694FB-5645-444A-A00E-D53744DDCA31}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C8791D4E-B462-417F-9C72-4D6CC0C7A53E}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="7178"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\famil\Downloads\MySalary.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID"
+              DTS:DTSID="{E7831C15-34CE-4B58-816D-9351D60FBEC7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NAME"
+              DTS:DTSID="{8495352C-53F8-4FDA-B78F-FE018A3496C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="25"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LASTNAME"
+              DTS:DTSID="{2E463347-8C8B-4E59-BABA-B0AF0E0195D1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="8"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SALARY"
+              DTS:DTSID="{BB8318E0-B637-4479-A7C6-A527A978B67D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{03C0C237-88C6-41F3-8CF9-66BC69CCB781}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="7178"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\famil\Downloads\MySalary.bad">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID"
+              DTS:DTSID="{AE69A671-76C2-47AC-BE82-4342BF2EAF6D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NAME"
+              DTS:DTSID="{1402E8B1-69A4-4742-B61D-95C25BBCD1D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="25"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LASTNAME"
+              DTS:DTSID="{5EC6537A-BC80-44F8-A78C-4EB43C88C00B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="8"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SALARY"
+              DTS:DTSID="{DC541CF3-C77F-4E55-97A5-B534CEF74839}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.EstudiantesJF]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CA804BE5-DE1C-4C31-B174-C124467F10C3}"
+      DTS:ObjectName="LocalHost.EstudiantesJF">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=EstudiantesJF;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{CA804BE5-DE1C-4C31-B174-C124467F10C3}LocalHost.EstudiantesJF;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.EstudiantesJF 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{24185A78-F617-4B18-B659-27B67D892DCC}"
+      DTS:ObjectName="LocalHost.EstudiantesJF 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=EstudiantesJF;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Delete from MySalary"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{631D6DF1-E591-4B57-954D-858D1247E599}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Delete from MySalary"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{CA804BE5-DE1C-4C31-B174-C124467F10C3}"
+          SQLTask:SqlStatementSource="DELETE FROM MySalaryJF" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load from CSV to SQL"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F88084D1-E537-4B9B-8A43-7D792EEB1928}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load from CSV to SQL"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load from CSV to SQL\CFULLNAME"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="CFULLNAME"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load from CSV to SQL\CFULLNAME.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\CFULLNAME.Inputs[Data Conversion Input].Columns[FULLNAME]"
+                      cachedDataType="wstr"
+                      cachedLength="45"
+                      cachedName="FULLNAME"
+                      lineageId="Package\Load from CSV to SQL\FULLNAME.Outputs[Derived Column Output].Columns[FULLNAME]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load from CSV to SQL\CFULLNAME.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Load from CSV to SQL\CFULLNAME.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\CFULLNAME.Outputs[Data Conversion Output].Columns[CFULLNAME]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="46"
+                      lineageId="Package\Load from CSV to SQL\CFULLNAME.Outputs[Data Conversion Output].Columns[CFULLNAME]"
+                      name="CFULLNAME"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Load from CSV to SQL\FULLNAME.Outputs[Derived Column Output].Columns[FULLNAME]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load from CSV to SQL\CFULLNAME.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Load from CSV to SQL\CFULLNAME.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\CFULLNAME.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load from CSV to SQL\CFULLNAME.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\CFULLNAME.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load from CSV to SQL\CFULLNAME.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load from CSV to SQL\FULLNAME"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="FULLNAME"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load from CSV to SQL\FULLNAME.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\FULLNAME.Inputs[Derived Column Input].Columns[NAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="NAME"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[NAME]" />
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\FULLNAME.Inputs[Derived Column Input].Columns[LASTNAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="LASTNAME"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[LASTNAME]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load from CSV to SQL\FULLNAME.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Load from CSV to SQL\FULLNAME.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\FULLNAME.Outputs[Derived Column Output].Columns[FULLNAME]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="45"
+                      lineageId="Package\Load from CSV to SQL\FULLNAME.Outputs[Derived Column Output].Columns[FULLNAME]"
+                      name="FULLNAME"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[NAME]} + "" + #{Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[LASTNAME]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">NAME + "" + LASTNAME</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load from CSV to SQL\FULLNAME.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Load from CSV to SQL\FULLNAME.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\FULLNAME.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load from CSV to SQL\FULLNAME.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\FULLNAME.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load from CSV to SQL\FULLNAME.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load from CSV to SQL\Identify Good and Bad records"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Identify Good and Bad records"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load from CSV to SQL\Identify Good and Bad records.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\Identify Good and Bad records.Inputs[Conditional Split Input].Columns[NAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="NAME"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[NAME]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load from CSV to SQL\Identify Good and Bad records.Outputs[Goods]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Goods"
+                  synchronousInputId="Package\Load from CSV to SQL\Identify Good and Bad records.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[LEN](#{Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[NAME]}) &gt; 0</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">LEN(NAME) &gt; 0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load from CSV to SQL\Identify Good and Bad records.Outputs[Bads]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Bads"
+                  synchronousInputId="Package\Load from CSV to SQL\Identify Good and Bad records.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[LEN](#{Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[NAME]}) == 0</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">LEN(NAME) == 0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load from CSV to SQL\Identify Good and Bad records.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Load from CSV to SQL\Identify Good and Bad records.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load from CSV to SQL\Identify Good and Bad records.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Load from CSV to SQL\Identify Good and Bad records.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\Identify Good and Bad records.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load from CSV to SQL\Identify Good and Bad records.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\Identify Good and Bad records.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load from CSV to SQL\Identify Good and Bad records.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load from CSV to SQL\Load bad records into Flat File"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="7178"
+              name="Load bad records into Flat File"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load from CSV to SQL\Load bad records into Flat File.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input].Columns[ID]"
+                      cachedDataType="numeric"
+                      cachedName="ID"
+                      cachedPrecision="6"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input].ExternalColumns[ID]"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[ID]" />
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input].Columns[NAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="NAME"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input].ExternalColumns[NAME]"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[NAME]" />
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input].Columns[LASTNAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="LASTNAME"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input].ExternalColumns[LASTNAME]"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[LASTNAME]" />
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input].Columns[SALARY]"
+                      cachedDataType="numeric"
+                      cachedName="SALARY"
+                      cachedPrecision="8"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input].ExternalColumns[SALARY]"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[SALARY]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input].ExternalColumns[ID]"
+                      dataType="numeric"
+                      name="ID"
+                      precision="6" />
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input].ExternalColumns[NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="NAME" />
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input].ExternalColumns[LASTNAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="LASTNAME" />
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input].ExternalColumns[SALARY]"
+                      dataType="numeric"
+                      name="SALARY"
+                      precision="8"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Load from CSV to SQL\Load data into MySalary table"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Load data into MySalary table"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[MySalaryJF]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load from CSV to SQL\Load data into MySalary table.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.EstudiantesJF 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.EstudiantesJF 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].Columns[ID]"
+                      cachedDataType="numeric"
+                      cachedName="ID"
+                      cachedPrecision="6"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[ID]" />
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].Columns[NAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="NAME"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].ExternalColumns[NAME]"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[NAME]" />
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].Columns[LASTNAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="25"
+                      cachedName="LASTNAME"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].ExternalColumns[LASTNAME]"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[LASTNAME]" />
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].Columns[SALARY]"
+                      cachedDataType="numeric"
+                      cachedName="SALARY"
+                      cachedPrecision="8"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].ExternalColumns[SALARY]"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[SALARY]" />
+                    <inputColumn
+                      refId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].Columns[CFULLNAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="46"
+                      cachedName="CFULLNAME"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].ExternalColumns[FULLNAME]"
+                      lineageId="Package\Load from CSV to SQL\CFULLNAME.Outputs[Data Conversion Output].Columns[CFULLNAME]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                      dataType="numeric"
+                      name="ID"
+                      precision="6" />
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].ExternalColumns[NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="NAME" />
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].ExternalColumns[LASTNAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="LASTNAME" />
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].ExternalColumns[SALARY]"
+                      dataType="numeric"
+                      name="SALARY"
+                      precision="8"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input].ExternalColumns[FULLNAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="46"
+                      name="FULLNAME" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load from CSV to SQL\Load data into MySalary table.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\Load data into MySalary table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load from CSV to SQL\Load data into MySalary table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\Load data into MySalary table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load from CSV to SQL\Load data into MySalary table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load from CSV to SQL\Read from CSV file"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="7178"
+              name="Read from CSV file"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load from CSV to SQL\Read from CSV file.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[ID]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].ExternalColumns[ID]"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[ID]"
+                      name="ID"
+                      precision="6"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].ExternalColumns[NAME]"
+                      length="20"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[NAME]"
+                      name="NAME"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[LASTNAME]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].ExternalColumns[LASTNAME]"
+                      length="25"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[LASTNAME]"
+                      name="LASTNAME"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[SALARY]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].ExternalColumns[SALARY]"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].Columns[SALARY]"
+                      name="SALARY"
+                      precision="8"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].ExternalColumns[ID]"
+                      dataType="numeric"
+                      name="ID"
+                      precision="6" />
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].ExternalColumns[NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="NAME" />
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].ExternalColumns[LASTNAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="LASTNAME" />
+                    <externalMetadataColumn
+                      refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output].ExternalColumns[SALARY]"
+                      dataType="numeric"
+                      name="SALARY"
+                      precision="8"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load from CSV to SQL.Paths[Bads]"
+              endId="Package\Load from CSV to SQL\Load bad records into Flat File.Inputs[Flat File Destination Input]"
+              name="Bads"
+              startId="Package\Load from CSV to SQL\Identify Good and Bad records.Outputs[Bads]" />
+            <path
+              refId="Package\Load from CSV to SQL.Paths[Data Conversion Output]"
+              endId="Package\Load from CSV to SQL\Load data into MySalary table.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Load from CSV to SQL\CFULLNAME.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Load from CSV to SQL.Paths[Derived Column Output]"
+              endId="Package\Load from CSV to SQL\CFULLNAME.Inputs[Data Conversion Input]"
+              name="Derived Column Output"
+              startId="Package\Load from CSV to SQL\FULLNAME.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Load from CSV to SQL.Paths[Flat File Source Output]"
+              endId="Package\Load from CSV to SQL\Identify Good and Bad records.Inputs[Conditional Split Input]"
+              name="Flat File Source Output"
+              startId="Package\Load from CSV to SQL\Read from CSV file.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Load from CSV to SQL.Paths[Goods]"
+              endId="Package\Load from CSV to SQL\FULLNAME.Inputs[Derived Column Input]"
+              name="Goods"
+              startId="Package\Load from CSV to SQL\Identify Good and Bad records.Outputs[Goods]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{F5B18259-F098-4A08-9D90-890FC375E23E}"
+      DTS:From="Package\Delete from MySalary"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Load from CSV to SQL" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="179.2,41.6"
+          Id="Package\Delete from MySalary"
+          TopLeft="207.14285758381,44.3529411375936" />
+        <NodeLayout
+          Size="183.2,41.6"
+          Id="Package\Load from CSV to SQL"
+          TopLeft="202.142857573166,157.529411626625" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="295.242857578488,85.9529411375936">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71.5764704890317"
+              Start="0,0"
+              End="0,64.0764704890317">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.0764704890317" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load from CSV to SQL">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="166.4,41.6"
+          Id="Package\Load from CSV to SQL\Read from CSV file"
+          TopLeft="95.0000002022302,14.5294117519703" />
+        <NodeLayout
+          Size="218.4,41.6"
+          Id="Package\Load from CSV to SQL\Load data into MySalary table"
+          TopLeft="59.2857144119181,340.294117348778" />
+        <NodeLayout
+          Size="222.4,41.6"
+          Id="Package\Load from CSV to SQL\Identify Good and Bad records"
+          TopLeft="96.4285716338426,106.294117553888" />
+        <EdgeLayout
+          Id="Package\Load from CSV to SQL.Paths[Flat File Source Output]"
+          TopLeft="178.20000020223,56.1294117519703">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="29.4285714316124,50.1647058019176"
+              Start="0,0"
+              End="29.4285714316124,42.6647058019176">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.0823529009588" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.0823529009588"
+                    Point2="0,25.0823529009588"
+                    Point3="4,25.0823529009588" />
+                  <mssgle:LineSegment
+                    End="25.4285714316124,25.0823529009588" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.4285714316124,25.0823529009588"
+                    Point2="29.4285714316124,25.0823529009588"
+                    Point3="29.4285714316124,29.0823529009588" />
+                  <mssgle:LineSegment
+                    End="29.4285714316124,42.6647058019176" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="220.8,41.6"
+          Id="Package\Load from CSV to SQL\Load bad records into Flat File"
+          TopLeft="363.571429345377,207.99999981768" />
+        <EdgeLayout
+          Id="Package\Load from CSV to SQL.Paths[Bads]"
+          TopLeft="243.361904967176,147.894117553888">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="230.609524378201,60.105882263792"
+              Start="0,0"
+              End="230.609524378201,52.605882263792">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2999495437902" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.2999495437902"
+                    Point2="0,24.2999495437902"
+                    Point3="4,24.2999495437902" />
+                  <mssgle:LineSegment
+                    End="226.609524378201,24.2999495437902" />
+                  <mssgle:CubicBezierSegment
+                    Point1="226.609524378201,24.2999495437902"
+                    Point2="230.609524378201,24.2999495437902"
+                    Point3="230.609524378201,28.2999495437902" />
+                  <mssgle:LineSegment
+                    End="230.609524378201,52.605882263792" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="104.2021840641,29.2999495437902,22.20515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Load from CSV to SQL\FULLNAME"
+          TopLeft="83.5714287493302,203.258823424176" />
+        <EdgeLayout
+          Id="Package\Load from CSV to SQL.Paths[Goods]"
+          TopLeft="171.895238300509,147.894117553888">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-23.5238095511791,55.3647058702877"
+              Start="0,0"
+              End="-23.5238095511791,47.8647058702877">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.3831596589877" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.3831596589877"
+                    Point2="0,22.3831596589877"
+                    Point3="-4,22.3831596589877" />
+                  <mssgle:LineSegment
+                    End="-19.5238095511791,22.3831596589877" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-19.5238095511791,22.3831596589877"
+                    Point2="-23.5238095511791,22.3831596589877"
+                    Point3="-23.5238095511791,26.3831596589877" />
+                  <mssgle:LineSegment
+                    End="-23.5238095511791,47.8647058702877" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-26.2670024318395,27.3831596589877,29.0101953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="136,41.6"
+          Id="Package\Load from CSV to SQL\CFULLNAME"
+          TopLeft="67.8571430015929,267.505882206817" />
+        <EdgeLayout
+          Id="Package\Load from CSV to SQL.Paths[Derived Column Output]"
+          TopLeft="148.37142874933,244.858823424176">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-12.5142857477373,22.6470587826414"
+              Start="0,0"
+              End="-12.5142857477373,15.1470587826414">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.3235293913207" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.3235293913207"
+                    Point2="0,11.3235293913207"
+                    Point3="-4,11.3235293913207" />
+                  <mssgle:LineSegment
+                    End="-8.51428574773726,11.3235293913207" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8.51428574773726,11.3235293913207"
+                    Point2="-12.5142857477373,11.3235293913207"
+                    Point3="-12.5142857477373,15.3235293913207" />
+                  <mssgle:LineSegment
+                    End="-12.5142857477373,15.1470587826414" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load from CSV to SQL.Paths[Data Conversion Output]"
+          TopLeft="135.857143001593,309.105882206817">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="32.6285714103252,31.1882351419608"
+              Start="0,0"
+              End="32.6285714103252,23.6882351419608">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.5941175709804" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.5941175709804"
+                    Point2="0,15.5941175709804"
+                    Point3="4,15.5941175709804" />
+                  <mssgle:LineSegment
+                    End="28.6285714103252,15.5941175709804" />
+                  <mssgle:CubicBezierSegment
+                    Point1="28.6285714103252,15.5941175709804"
+                    Point2="32.6285714103252,15.5941175709804"
+                    Point3="32.6285714103252,19.5941175709804" />
+                  <mssgle:LineSegment
+                    End="32.6285714103252,23.6882351419608" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load from CSV to SQL\Load data into MySalary table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

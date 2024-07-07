@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Practice9ExceltoDB", "Practice9ExceltoDB.dtproj", "{E2ABEC68-F327-4E5F-9B47-A34B96D05FB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2ABEC68-F327-4E5F-9B47-A34B96D05FB3}.Development|Default.ActiveCfg = Development
+		{E2ABEC68-F327-4E5F-9B47-A34B96D05FB3}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EC92090-D3EC-42BA-B32C-A6D44828B47B}
+	EndGlobalSection
+EndGlobal
